@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VYBE — Prototype</title>
+  <link href="styles.css" rel="stylesheet" />
+  <meta name="theme-color" content="#0b0714" />
+</head>
+<body>
+  <!-- Splash / Loader -->
+  <div id="splash" class="splash">
+    <div class="splash-inner">
+      <img src="assets/logo.png" alt="VYBE logo" class="splash-logo" />
+      <div class="splash-title">VYBE</div>
+    </div>
+  </div>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.png" alt="logo" class="mini-logo"/>
+      <span class="brand-text">VYBE</span>
+    </div>
+    <div class="search">Discover</div>
+    <div class="profile">You</div>
+  </header>
+
+  <!-- Main content -->
+  <main id="app" class="app">
+    <section class="feed">
+      <!-- sample post 1 -->
+      <article class="card">
+        <div class="post-header">
+          <div class="avatar">VB</div>
+          <div class="user-info">
+            <div class="user-name">VibeCreator</div>
+            <div class="post-meta">2h · Music</div>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <div class="post-body">
+          <div class="post-media placeholder"></div>
+          <p class="post-text">Dropping a new remix — feel the energy 🌊🔥</p>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn">❤ <span class="likes-count">124</span></button>
+          <button class="comment-btn">💬 <span>18</span></button>
+          <button class="share-btn">↗</button>
+        </div>
+      </article>
+
+      <!-- sample post 2 -->
+      <article class="card">
+        <div class="post-header">
+          <div class="avatar">MJ</div>
+          <div class="user-info">
+            <div class="user-name">Maya J</div>
+            <div class="post-meta">1d · Live</div>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <div class="post-body">
+          <div class="post-media placeholder"></div>
+          <p class="post-text">Live from Lagos — join the party! 🎉</p>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn">❤ <span class="likes-count">2.4k</span></button>
+          <button class="comment-btn">💬 <span>420</span></button>
+          <button class="share-btn">↗</button>
+        </div>
+      </article>
+
+      <!-- sample post 3 -->
+      <article class="card">
+        <div class="post-header">
+          <div class="avatar">AK</div>
+          <div class="user-info">
+            <div class="user-name">AniK</div>
+            <div class="post-meta">3d · Short</div>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <div class="post-body">
+          <div class="post-media placeholder"></div>
+          <p class="post-text">Made a quick dance challenge — try it under 15s 💥</p>
+        </div>
+        <div class="post-actions">
+          <button class="like-btn">❤ <span class="likes-count">86</span></button>
+          <button class="comment-btn">💬 <span>9</span></button>
+          <button class="share-btn">↗</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Floating create & bottom nav -->
+  <nav class="bottombar">
+    <div class="nav-item">🏠</div>
+    <div class="nav-item">🔍</div>
+    <button id="createBtn" class="create-btn">+</button>
+    <div class="nav-item">💬</div>
+    <div class="nav-item">👤</div>
+  </nav>
+
+  <!-- Create modal -->
+  <div id="createModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Create on VYBE</h3>
+      <textarea id="postText" placeholder="What's your vibe?"></textarea>
+      <div class="modal-actions">
+        <button id="cancelCreate" class="btn outline">Cancel</button>
+        <button id="publishCreate" class="btn">Publish</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
